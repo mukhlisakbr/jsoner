@@ -1,3 +1,3 @@
 # JSONer
 
-make your json nicer.
+Make your json nicer.
