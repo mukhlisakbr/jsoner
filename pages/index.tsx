@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import { useForm } from 'react-hook-form'
 import dynamic from 'next/dynamic'
+import Head from 'next/head'
 const DynamicReactJson = dynamic(import('react-json-view'), { ssr: false })
 
 const Home: NextPage = () => {
@@ -29,6 +30,10 @@ const Home: NextPage = () => {
 
   return (
     <div>
+      <Head>
+        <title>JSONer | Make your json nicer.</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Navbar />
       <ToastContainer
         position="top-right"

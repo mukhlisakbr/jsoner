@@ -9,7 +9,13 @@ const Navbar: NextPage = () => {
       </div>
       <div className="navbar-end">
         <button className="btn btn-circle btn-ghost">
-          <FaGithub size={24} />
+          <a
+            href="https://github.com/mukhlisakbr/jsoner"
+            target={'_blank'}
+            rel="noreferrer"
+          >
+            <FaGithub size={24} />
+          </a>
         </button>
       </div>
     </div>
